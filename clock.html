@@ -1,0 +1,33 @@
+<style>
+    body {
+        background-color: #232222;
+    }
+    .y-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<div class="y-center">
+
+    <div id="clockbox" style="color:#FFFFFF; font:48pt Roboto Mono; text-align:center;"></div>
+
+    <script type="text/javascript">
+        function GetClock() {
+            var d = new Date();
+            var nhour = d.getHours(), nmin = d.getMinutes();
+            if (nmin <= 9) nmin = "0" + nmin
+
+            var clocktext = "" + nhour + ":" + nmin + "";
+            document.getElementById('clockbox').innerHTML = clocktext;
+        }
+
+        GetClock();
+        setInterval(GetClock, 1000);
+
+    </script>
+
+    <br><br><br><br><br>
+
+    <iframe src="https://now-playing-2e8d3.web.app/?user=vortck&theme=stacked" frameBorder="0" width=250></iframe>
+</div>
