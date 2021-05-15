@@ -1,0 +1,17 @@
+body {
+    background-color: #232222;
+}
+
+.center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+}
+
+#clockbox {
+    color: #ffffff;
+    font-size: 48pt;
+    font-family: "Roboto Mono";
+    text-align: center;
+}
