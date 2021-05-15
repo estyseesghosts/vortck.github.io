@@ -2,6 +2,11 @@ body {
     background-color: #232222;
 }
 
+@font-face {
+    font-family: robotomono;
+    src: url(../fonts/RobotoMono.ttf);
+}
+
 .center {
     display: grid;
     justify-content: center;
@@ -12,6 +17,17 @@ body {
 #clockbox {
     color: #ffffff;
     font-size: 48pt;
-    font-family: "Roboto Mono";
+    font-family: "robotomono";
+    text-align: center;
+}
+
+.links {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    color: #ffffff;
+    font-size: 24pt;
+    font-family: "robotomono";
     text-align: center;
 }
