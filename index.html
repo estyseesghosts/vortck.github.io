@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>esty</title>
+</head>
+<body>
+<div class="center">
+<h1>hi i'm esty and it is <span id="clockbox"></span></h1>
+<p>
+<a href="https://open.spotify.com/user/ddktlmvfxkbdpb1twnjchtjh9">spotify</a> 
+<a href="https://last.fm/user/vortck">last.fm</a> 
+<a href="https://instagram.com/estyphobic">photography</a> <br>
+<a href="https://t.me/tw1nkf4ntasy">telegram</a> 
+<a href="https://github.com/estyseesghosts">github</a> 
+<a href="https://discord.gg/6C4ghMttQ7">discord</a> 
+<br><br>
+<button type="button" class="button" onclick="myFunction()">be nosy</button> 
+<div id="hiddenz">
+<p class="smaller">
+18
+<br>
+fuck a gender 
+<br>
+photography is cool i like film and shit 
+<br>
+i hate programming ong
+<br>
+harass me if ur cool</p>
+</div>
+</p>
+<br>
+</div>
+<script>
+    function myFunction() {
+      document.getElementById("hiddenz").style.display = "block";
+    }
+
+    function GetClock() {
+    var d = new Date();
+    var nhour = d.getHours(), nmin = d.getMinutes();
+    if (nmin <= 9) nmin = "0" + nmin
+
+    var clocktext = "" + nhour + ":" + nmin + "";
+    document.getElementById('clockbox').innerHTML = clocktext;
+}
+GetClock();
+setInterval(GetClock, 1000);
+</script>
+<div class="center">
+    <table>
+    <td><p class="nowplaying">Now listening to: </p></td>
+    <td><iframe src="https://now-playing-2e8d3.web.app/?user=vortck&theme=ticker" frameBorder="0" width=170px height=22px></iframe></td>
+    </table>
+</div>
+</body>
+</html> 
