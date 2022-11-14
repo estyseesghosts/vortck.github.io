@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>esty</title>
+</head>
+<body>
+
+<div class="center">
+<h1>
+    Last login: <span id="clockbox"></span>
+    <br> est@getlaidvirg.in ~ % ls 
+    <br> <a href="https://music.apple.com/ca/playlist/everything/pl.u-9N9LvdWs1z7Lpx">my_playlist</a> <a href="https://music.apple.com/profile/estyseesghosts">apple_music</a> <a href="https://last.fm/user/vortck">last.fm</a>
+    <br> <a href="https://t.me/bussyfart">telegram</a> <a href="https://estyseesghosts.tumblr.com">tumblr</a> <a href="https://discord.com/users/919337503729786930">discord</a>
+    <br> <a href="https://github.com/estyseesghosts">github</a> <a href="mailto:estefan@roze.cc">email</a> <button id="button" class="button" onclick="myFunction()">about_me</button>
+
+    <div id="hidden"> 
+
+    <br> est@getlaidvirg.in ~ % about
+    <br> ^_^ 
+    <br> 18y. occasional photographer, sometimes programmer, spiteful IT major that plans to switch to comp. sci 
+    <br> my music taste is my entire personality as well as things i would not like to say on the internet...
+    <br> any pronoun is fine i don't think i really care 
+    <br> 
+
+    </div>
+
+</h1>
+
+
+<script>
+function myFunction() {
+    document.getElementById("hidden").style.display = "block";
+}
+
+function GetClock() {
+    var d = new Date();
+    var nmin = d.getMinutes(), nhrs = d.getHours();
+    (nmin <= 9) ? nmin = "0" + nmin : nmin = nmin;
+    (nhrs <= 9) ? nhrs = "0" + nhrs : nhrs = nhrs;
+
+    let userAgent = navigator.userAgent;
+         let browserName;
+         
+         if(userAgent.match(/chrome|chromium|crios/i)){
+             browserName = "chrome";
+           }else if(userAgent.match(/firefox|fxios/i)){
+             browserName = "firefox";
+           }  else if(userAgent.match(/safari/i)){
+             browserName = "safari";
+           }else if(userAgent.match(/opr\//i)){
+             browserName = "opera";
+           } else if(userAgent.match(/edg/i)){
+             browserName = "edge";
+           }else{
+             browserName="No browser detection";
+           }
+
+    document.getElementById('clockbox').innerHTML = d.toDateString() + " " + d.getHours() + ":" + nmin + " on " + browserName;
+}
+GetClock();
+setInterval(GetClock, 1000);
+</script>
+
+</body>
+<!-- 
+no more lily criticizing my web dev skills xddd
+if you're reading this, join my discord (: 6..C..4..g..h..M..t..t..Q..7 
+site made on 2022-11-13 22:27  -->
+
+</html> 

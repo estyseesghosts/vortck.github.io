@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono');
+
+body {
+    background-color: #0B0B0B;
+    margin: 4% 18%;
+}
+
+.clockbox {
+    font-size: 48px;
+    display: inline;
+}
+
+.button {
+    border: none;
+    background-color: #0B0B0B;
+    color: #4bde72;
+    font-family: 'Oxygen Mono', regular;
+    padding: 0% 0%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 0px;
+  }
+
+h1 {
+    color: #FBF3F1;
+    font-family: 'Oxygen Mono', regular;
+    font-size: 24px;
+    }
+
+a {
+    color: #4bde72;
+    text-decoration: none;
+}
+
+#hidden {
+    display: none;
+}
